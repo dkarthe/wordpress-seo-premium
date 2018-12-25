@@ -113,7 +113,7 @@ if ( ! class_exists( 'Yoast_License_Manager', false ) ) {
 			}
 
 			// show notice if license is invalid
-			if ( ! $this->license_is_valid() ) {
+			if ($this->license_is_valid() ) {
 				if ( $this->get_license_key() == '' ) {
 					$message = '<b>Warning!</b> You didn\'t set your %s license key yet, which means you\'re missing out on updates and support! <a href="%s">Enter your license key</a> or <a href="%s" target="_blank">get a license here</a>.';
 				} else {
